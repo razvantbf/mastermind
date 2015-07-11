@@ -1,1 +1,62 @@
+body {
+    padding: 0 5%;
+	font-family: $font-primary;
+	font-size: 1.4rem;
+	line-height: 2.1rem;
+	background: #fff;
+	@include bp-medium {
+		font-size: 1.8rem;
+		line-height: 2.8rem;
+	}
+}
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-secondary;
+	font-weight:700;
+	text-transform: uppercase;
+	color: black;
+	margin: 2rem 0 0;
+    text-align: center;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 5rem;
+    padding: 1rem 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h1+h2, h2+h3 {
+    line-height: 1.5;
+    font-family: $font-primary;
+    font-weight: normal;
+    text-transform: none;
+}
+
+h1+h2 {
+    font-size: 2rem;
+}
+
+h2+h3 {
+    font-size: 1.8rem;
+    color: $darkgrey;
+}
+
+p {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
