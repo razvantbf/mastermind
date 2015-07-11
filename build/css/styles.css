@@ -63,6 +63,20 @@ strong {
 em {
   font-style: italic; }
 
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0.3; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0.3; }
+
+  100% {
+    opacity: 1; } }
+
 .container {
   max-width: 1000px;
   max-width: 100rem;
@@ -82,13 +96,11 @@ em {
   background: #D54844;
   padding: 80px 150px;
   padding: 8rem 15rem; }
-  .red-container h2 {
-    text-align: left;
-    color: white; }
-  .red-container p {
+  .red-container h2, .red-container p {
+    text-align: center;
     color: white; }
 
-button.cta {
+.cta {
   position: relative;
   display: block;
   height: 70px;
@@ -110,17 +122,17 @@ button.cta {
   border-radius: 3.5rem;
   box-shadow: 0 6px #722624; }
 
-button.cta:hover {
+.cta:hover {
   box-shadow: 0 4px #722624;
   top: 2px;
   cursor: pointer; }
 
-button.cta:active {
+.cta:active {
   box-shadow: none;
   top: 6px;
   outline: none; }
 
-button.cta:focus {
+.cta:focus {
   outline: none; }
 
 .graph-title {
@@ -358,12 +370,10 @@ button.cta:focus {
   color: white;
   text-align: center; }
   .offer h2 {
-    text-align: center;
     margin-top: 0; }
   .offer p {
     line-height: 1.8; }
   .offer p span {
-    color: white;
     border-bottom: 1px dashed white; }
   .offer p span:hover {
     background: white;
