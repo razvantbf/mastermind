@@ -109,18 +109,20 @@
 // }}}
 // PROBLEMS {{{
 .problems {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    .problems-row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
     .problems-box {
-        width:27%;
+        float: left;
+        width:33.33%;
+        padding: 0 2.9rem;
     }
     p {
         font-size: 1.6rem;
     }
-    p:last-child {
+    .problems-box p:last-child {
         font-size: 1.4rem;
         line-height: 1.5;
         color: $darkgrey;
