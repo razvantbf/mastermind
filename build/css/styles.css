@@ -7,7 +7,11 @@ body {
   line-height: 21px;
   line-height: 2.1rem;
   background: #fff; }
-  @media only screen and (min-width: 670px) {
+  @media only screen and (min-width: 600px) {
+    body {
+      font-size: 1.6rem;
+      line-height: 2.3rem; } }
+  @media only screen and (min-width: 870px) {
     body {
       font-size: 1.8rem;
       line-height: 2.8rem; } }
@@ -29,14 +33,20 @@ h1 {
   padding: 1rem 0;
   border-top: 1px solid black;
   border-bottom: 1px solid black; }
-  @media only screen and (min-width: 670px) {
+  @media only screen and (min-width: 600px) {
+    h1 {
+      font-size: 3.8rem; } }
+  @media only screen and (min-width: 870px) {
     h1 {
       font-size: 5rem; } }
 
 h2 {
   font-size: 22px;
   font-size: 2.2rem; }
-  @media only screen and (min-width: 670px) {
+  @media only screen and (min-width: 600px) {
+    h2 {
+      font-size: 2.7rem; } }
+  @media only screen and (min-width: 870px) {
     h2 {
       font-size: 3.5rem; } }
 
@@ -49,7 +59,10 @@ h1 + h2, h2 + h3 {
 h1 + h2 {
   font-size: 16px;
   font-size: 1.6rem; }
-  @media only screen and (min-width: 670px) {
+  @media only screen and (min-width: 600px) {
+    h1 + h2 {
+      font-size: 1.8rem; } }
+  @media only screen and (min-width: 870px) {
     h1 + h2 {
       font-size: 2rem; } }
 
@@ -57,7 +70,10 @@ h2 + h3 {
   font-size: 14px;
   font-size: 1.4rem;
   color: #a4a4a4; }
-  @media only screen and (min-width: 670px) {
+  @media only screen and (min-width: 600px) {
+    h2 + h3 {
+      font-size: 1.6rem; } }
+  @media only screen and (min-width: 870px) {
     h2 + h3 {
       font-size: 1.8rem; } }
 
@@ -68,7 +84,10 @@ p {
   margin-top: 1rem;
   margin-bottom: 10px;
   margin-bottom: 1rem; }
-  @media only screen and (min-width: 670px) {
+  @media only screen and (min-width: 600px) {
+    p {
+      font-size: 1.6rem; } }
+  @media only screen and (min-width: 870px) {
     p {
       font-size: 1.8rem;
       margin-top: 2rem;
@@ -102,7 +121,7 @@ em {
 .small-container {
   width: 100%;
   padding: 0; }
-  @media only screen and (min-width: 670px) {
+  @media only screen and (min-width: 870px) {
     .small-container {
       padding: 0 12rem; } }
 
@@ -110,7 +129,7 @@ em {
   padding: 20px;
   padding: 2rem;
   background: #f5f5f5; }
-  @media only screen and (min-width: 670px) {
+  @media only screen and (min-width: 870px) {
     .light-container {
       padding: 4rem; } }
 
@@ -118,76 +137,29 @@ em {
   background: #D54844;
   padding: 10px 20px 20px 20px;
   padding: 1rem 2rem 2rem 2rem; }
-  @media only screen and (min-width: 670px) {
+  @media only screen and (min-width: 600px) {
+    .red-container {
+      padding: 2rem 5rem 3rem 5rem; } }
+  @media only screen and (min-width: 870px) {
     .red-container {
       padding: 8rem 15rem; } }
   .red-container h2, .red-container p {
     text-align: center;
     color: white; }
 
-.cta {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  padding: 0 !important;
-  background: #a33634;
-  border: 0;
-  font-weight: 400;
-  font-family: 'Source Sans Pro', sans-serif;
-  text-align: center;
-  color: white;
-  height: 40px;
-  height: 4rem;
-  width: 250px;
-  width: 25rem;
-  font-size: 14px;
-  font-size: 1.4rem;
-  line-height: 40px;
-  line-height: 4rem;
-  border-radius: 2rem;
-  box-shadow: 0 3px #722624; }
-  @media only screen and (min-width: 670px) {
-    .cta {
-      height: 7rem;
-      width: 46rem;
-      font-size: 2rem;
-      line-height: 7rem;
-      border-radius: 3.5rem;
-      box-shadow: 0 6px #722624; } }
-
-.cta span:first-child {
-  display: none; }
-@media only screen and (min-width: 670px) {
-  .cta span:first-child {
-    display: inline; }
-  .cta span:last-child {
-    display: none; } }
-
-@media only screen and (min-width: 670px) {
-  .cta:hover {
-    box-shadow: 0 4px #722624;
-    top: 2px;
-    cursor: pointer; } }
-
-.cta:active {
-  box-shadow: none;
-  top: 3px;
-  outline: none; }
-  @media only screen and (min-width: 670px) {
-    .cta:active {
-      top: 6px; } }
-
-.cta:focus {
-  outline: none; }
-
 .graph-title {
   position: relative;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
+  @media only screen and (min-width: 870px) {
+    .graph-title {
+      overflow: visible; } }
   .graph-title img:first-child {
     display: none; }
-    @media only screen and (min-width: 670px) {
+    @media only screen and (min-width: 400px) {
       .graph-title img:first-child {
-        width: 90vw;
+        display: block;
+        width: 130vw;
         max-width: 1275px;
         position: absolute;
         top: 50%;
@@ -196,8 +168,13 @@ em {
             -ms-transform: translate(-50%, -56%);
                 transform: translate(-50%, -56%);
         z-index: -999; } }
+    @media only screen and (min-width: 870px) {
+      .graph-title img:first-child {
+        width: 90vw; } }
   .graph-title img:last-child {
-    width: 70%;
+    width: 50%;
+    min-width: 180px;
+    min-width: 18rem;
     max-width: 300px;
     max-width: 30rem; }
 
@@ -208,9 +185,14 @@ em {
     vertical-align: middle; }
   .quote img {
     width: 40%;
+    max-width: 150px;
+    max-width: 15rem;
     margin-bottom: 10px;
     margin-bottom: 1rem; }
-    @media only screen and (min-width: 670px) {
+    @media only screen and (min-width: 600px) {
+      .quote img {
+        margin-bottom: 2rem; } }
+    @media only screen and (min-width: 870px) {
       .quote img {
         width: 20%;
         margin-right: 5%;
@@ -218,8 +200,14 @@ em {
   .quote blockquote {
     width: 100%;
     text-align: center; }
-    @media only screen and (min-width: 670px) {
+    @media only screen and (min-width: 600px) {
       .quote blockquote {
+        padding-left: 15%;
+        padding-right: 15%; } }
+    @media only screen and (min-width: 870px) {
+      .quote blockquote {
+        padding-left: 0;
+        padding-right: 0;
         width: 75%; } }
   .quote blockquote cite {
     display: inline;
@@ -228,7 +216,7 @@ em {
     margin-right: 0;
     margin-bottom: 10px;
     margin-bottom: 1rem; }
-    @media only screen and (min-width: 670px) {
+    @media only screen and (min-width: 870px) {
       .quote.full-width img {
         margin-bottom: 3rem; } }
   .quote.full-width blockquote {
@@ -236,6 +224,18 @@ em {
   .quote.img-right {
     margin-right: 0;
     margin-left: 5%; }
+
+.problems-container h3 {
+  padding-left: 0;
+  padding-right: 0; }
+  @media only screen and (min-width: 600px) {
+    .problems-container h3 {
+      padding-left: 10%;
+      padding-right: 10%; } }
+  @media only screen and (min-width: 870px) {
+    .problems-container h3 {
+      padding-left: 0;
+      padding-right: 0; } }
 
 .problems .problems-row:after {
   content: "";
@@ -247,7 +247,10 @@ em {
   padding: 0;
   margin-bottom: 20px;
   margin-bottom: 2rem; }
-  @media only screen and (min-width: 670px) {
+  @media only screen and (min-width: 600px) {
+    .problems .problems-box {
+      padding: 0 10%; } }
+  @media only screen and (min-width: 870px) {
     .problems .problems-box {
       width: 33.33%;
       padding: 0 2.9rem;
@@ -256,7 +259,7 @@ em {
   font-size: 14px;
   font-size: 1.4rem;
   text-align: center; }
-  @media only screen and (min-width: 670px) {
+  @media only screen and (min-width: 600px) {
     .problems p {
       font-size: 1.6rem;
       text-align: left; } }
@@ -268,9 +271,43 @@ em {
   border-top: 1px dashed #a4a4a4;
   padding-top: 10px;
   padding-top: 1rem; }
-  @media only screen and (min-width: 670px) {
+  @media only screen and (min-width: 600px) {
     .problems .problems-box p:last-child {
       font-size: 1.4rem; } }
+
+.how {
+  padding-left: 40px;
+  padding-left: 4rem;
+  padding-right: 40px;
+  padding-right: 4rem; }
+  @media only screen and (min-width: 600px) {
+    .how {
+      padding-left: 8rem;
+      padding-right: 8rem; } }
+  @media only screen and (min-width: 870px) {
+    .how {
+      padding-left: 10rem;
+      padding-right: 10rem; } }
+  .how h2, .how h3 {
+    text-align: left; }
+    @media only screen and (min-width: 600px) {
+      .how h2, .how h3 {
+        text-align: center; } }
+  .how h3 {
+    margin-top: 10px;
+    margin-top: 1rem; }
+    @media only screen and (min-width: 870px) {
+      .how h3 {
+        margin-top: 2rem; } }
+  .how .how-title {
+    margin-top: 40px;
+    margin-top: 4rem; }
+    @media only screen and (min-width: 600px) {
+      .how .how-title {
+        width: 70%; } }
+    @media only screen and (min-width: 870px) {
+      .how .how-title {
+        margin-top: 2rem; } }
 
 .timeline {
   position: relative;
@@ -286,7 +323,7 @@ em {
     height: 100%;
     background: black;
     content: ' '; }
-    @media only screen and (min-width: 670px) {
+    @media only screen and (min-width: 870px) {
       .timeline:before {
         left: 50%; } }
   .timeline .timeline-block {
@@ -299,16 +336,20 @@ em {
     position: absolute;
     top: 50%;
     left: 5%;
-    width: 54px;
-    width: 5.4rem;
-    margin-left: -27px;
-    margin-left: -2.7rem;
+    width: 40px;
+    width: 4rem;
+    margin-left: -20px;
+    margin-left: -2rem;
     margin-top: -40px;
     margin-top: -4rem;
     padding: 20px 0;
     padding: 2rem 0;
     background: white; }
-    @media only screen and (min-width: 670px) {
+    @media only screen and (min-width: 600px) {
+      .timeline .timeline-date {
+        width: 4.4rem;
+        margin-left: -2.2rem; } }
+    @media only screen and (min-width: 870px) {
       .timeline .timeline-date {
         left: 50%;
         width: 5.4rem;
@@ -325,43 +366,103 @@ em {
     font-size: 16px;
     font-size: 1.6rem;
     line-height: 1.3; }
-    @media only screen and (min-width: 670px) {
+    @media only screen and (min-width: 600px) {
+      .timeline .timeline-date span {
+        font-size: 2rem; } }
+    @media only screen and (min-width: 870px) {
       .timeline .timeline-date span {
         font-size: 2.4rem; } }
   .timeline .timeline-date span:first-child {
     background: #D54844;
     color: white;
-    font-size: 12px;
-    font-size: 1.2rem; }
-    @media only screen and (min-width: 670px) {
+    font-size: 10px;
+    font-size: 1rem; }
+    @media only screen and (min-width: 600px) {
+      .timeline .timeline-date span:first-child {
+        font-size: 1.2rem; } }
+    @media only screen and (min-width: 870px) {
       .timeline .timeline-date span:first-child {
         font-size: 1.5rem;
         padding: 0 2px; } }
   .timeline .timeline-content {
     position: relative;
-    width: 45%; }
+    width: 83%;
+    margin-left: 17%;
+    padding: 20px;
+    padding: 2rem; }
+    @media only screen and (min-width: 870px) {
+      .timeline .timeline-content {
+        width: 45%;
+        margin-left: 0;
+        padding: 0; } }
   .timeline .timeline-content.right {
-    margin-left: 55%; }
+    margin-left: 17%; }
+    @media only screen and (min-width: 870px) {
+      .timeline .timeline-content.right {
+        margin-left: 55%; } }
   .timeline .timeline-content.left-to-right {
-    width: 100%; }
+    margin-left: 17%;
+    width: 83%; }
+    @media only screen and (min-width: 870px) {
+      .timeline .timeline-content.left-to-right {
+        margin-left: 0;
+        width: 100%; } }
   .timeline .timeline-content p, .timeline .timeline-content img, .timeline .timeline-spacer {
     display: inline-block;
     vertical-align: middle; }
   .timeline .timeline-content p {
-    font-size: 16px;
-    font-size: 1.6rem;
+    font-size: 12px;
+    font-size: 1.2rem;
     line-height: 1.4;
-    padding: 10px 20px;
-    padding: 1rem 2rem;
+    padding-right: 20px;
+    padding-right: 2rem;
     width: 66.66%; }
+    @media only screen and (min-width: 600px) {
+      .timeline .timeline-content p {
+        font-size: 1.4rem; } }
+    @media only screen and (min-width: 870px) {
+      .timeline .timeline-content p {
+        font-size: 1.6rem;
+        padding: 1rem 2rem; } }
+  .timeline .timeline-content.right p {
+    padding-right: 0;
+    padding-left: 20px;
+    padding-left: 2rem; }
+    @media only screen and (min-width: 870px) {
+      .timeline .timeline-content.right p {
+        padding: 1rem 2rem; } }
   .timeline .timeline-content img {
-    width: 33.33%; }
+    width: 33.33%;
+    max-width: 150px;
+    max-width: 15rem; }
   .timeline .timeline-spacer {
-    width: 10%; }
+    width: 100%;
+    height: 40px;
+    height: 4rem; }
+    @media only screen and (min-width: 870px) {
+      .timeline .timeline-spacer {
+        width: 10%;
+        height: auto; } }
   .timeline .timeline-content.left-to-right p {
-    width: 29.7%; }
+    width: 66%;
+    padding-right: 20px;
+    padding-right: 2rem; }
+    @media only screen and (min-width: 870px) {
+      .timeline .timeline-content.left-to-right p {
+        width: 29.7%;
+        padding: 1rem 2rem; } }
+  .timeline .timeline-content.left-to-right img + p {
+    padding-right: 0;
+    padding-left: 20px;
+    padding-left: 2rem; }
+    @media only screen and (min-width: 870px) {
+      .timeline .timeline-content.left-to-right img + p {
+        padding: 1rem 2rem; } }
   .timeline .timeline-content.left-to-right img {
-    width: 14.85%; }
+    width: 33%; }
+    @media only screen and (min-width: 870px) {
+      .timeline .timeline-content.left-to-right img {
+        width: 14.85%; } }
   .timeline .timeline-content.animate-enter {
     -webkit-animation: fade-in .6s;
             animation: fade-in .6s; }
@@ -371,7 +472,7 @@ em {
 .skills {
   padding: 10px 10px;
   padding: 1rem 1rem; }
-  @media only screen and (min-width: 670px) {
+  @media only screen and (min-width: 870px) {
     .skills {
       padding: 4rem 8rem; } }
   .skills > div {
@@ -383,39 +484,39 @@ em {
     text-align: center;
     font-size: 12px;
     font-size: 1.2rem; }
-    @media only screen and (min-width: 670px) {
+    @media only screen and (min-width: 600px) {
+      .skills > div {
+        font-size: 1.4rem; } }
+    @media only screen and (min-width: 870px) {
       .skills > div {
         font-size: 1.8rem; } }
   .skills > div:nth-child(1) {
     width: 100%; }
-    @media only screen and (min-width: 670px) {
+    @media only screen and (min-width: 600px) {
       .skills > div:nth-child(1) {
         width: 40%; } }
   .skills > div:nth-child(2) {
     width: 100%; }
-    @media only screen and (min-width: 670px) {
+    @media only screen and (min-width: 600px) {
       .skills > div:nth-child(2) {
         width: 52%; } }
   .skills > div:nth-child(3) {
     width: 100%; }
-    @media only screen and (min-width: 670px) {
+    @media only screen and (min-width: 600px) {
       .skills > div:nth-child(3) {
         width: 64%; } }
   .skills > div:nth-child(4) {
     width: 100%; }
-    @media only screen and (min-width: 670px) {
+    @media only screen and (min-width: 600px) {
       .skills > div:nth-child(4) {
         width: 76%; } }
   .skills > div:nth-child(5) {
     width: 100%; }
-    @media only screen and (min-width: 670px) {
+    @media only screen and (min-width: 600px) {
       .skills > div:nth-child(5) {
         width: 88%; } }
   .skills > div:nth-child(6) {
     width: 100%; }
-    @media only screen and (min-width: 670px) {
-      .skills > div:nth-child(6) {
-        width: 100%; } }
   .skills p {
     font-size: 12px;
     font-size: 1.2rem;
@@ -424,37 +525,10 @@ em {
     color: #a4a4a4;
     margin-bottom: 0;
     text-align: center; }
-    @media only screen and (min-width: 670px) {
+    @media only screen and (min-width: 870px) {
       .skills p {
         margin-top: 4rem;
         font-size: 1.8rem; } }
-
-.how {
-  padding-left: 40px;
-  padding-left: 4rem;
-  padding-right: 40px;
-  padding-right: 4rem; }
-  @media only screen and (min-width: 670px) {
-    .how {
-      padding-left: 10rem;
-      padding-right: 10rem; } }
-  .how h2, .how h3 {
-    text-align: left; }
-    @media only screen and (min-width: 670px) {
-      .how h2, .how h3 {
-        text-align: center; } }
-  .how h3 {
-    margin-top: 10px;
-    margin-top: 1rem; }
-    @media only screen and (min-width: 670px) {
-      .how h3 {
-        margin-top: 2rem; } }
-  .how .how-title {
-    margin-top: 40px;
-    margin-top: 4rem; }
-    @media only screen and (min-width: 670px) {
-      .how .how-title {
-        margin-top: 2rem; } }
 
 .offer {
   background: #D54844;
@@ -463,17 +537,81 @@ em {
   .offer h2 {
     margin-top: 10px;
     margin-top: 1rem; }
-    @media only screen and (min-width: 670px) {
+    @media only screen and (min-width: 870px) {
       .offer h2 {
         margin-top: 0; } }
   .offer p {
-    line-height: 1.8; }
+    line-height: 1.5; }
+    @media only screen and (min-width: 870px) {
+      .offer p {
+        line-height: 1.8; } }
   .offer p span {
     border-bottom: 1px dashed white; }
-  @media only screen and (min-width: 670px) {
+  @media only screen and (min-width: 870px) {
     .offer p span:hover {
       background: white;
       color: black; } }
+
+.cta {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding: 0 !important;
+  background: #a33634;
+  border: 0;
+  font-weight: 400;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  color: white;
+  height: 40px;
+  height: 4rem;
+  width: 250px;
+  width: 25rem;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 40px;
+  line-height: 4rem;
+  border-radius: 2rem;
+  box-shadow: 0 3px #722624; }
+  @media only screen and (min-width: 600px) {
+    .cta {
+      height: 5rem;
+      width: 30rem;
+      font-size: 1.8rem;
+      line-height: 5rem;
+      border-radius: 2.5rem;
+      box-shadow: 0 4px #722624; } }
+  @media only screen and (min-width: 870px) {
+    .cta {
+      height: 7rem;
+      width: 46rem;
+      font-size: 2rem;
+      line-height: 7rem;
+      border-radius: 3.5rem;
+      box-shadow: 0 6px #722624; } }
+
+.cta span:first-child {
+  display: none; }
+@media only screen and (min-width: 870px) {
+  .cta span:first-child {
+    display: inline; }
+  .cta span:last-child {
+    display: none; } }
+
+@media only screen and (min-width: 870px) {
+  .cta:hover {
+    box-shadow: 0 4px #722624;
+    top: 2px;
+    cursor: pointer; } }
+
+.cta:active, .cta:focus {
+  outline: none;
+  box-shadow: none;
+  top: 3px;
+  outline: none; }
+  @media only screen and (min-width: 870px) {
+    .cta:active, .cta:focus {
+      top: 6px; } }
 
 .footer {
   margin-top: 40px;
@@ -484,7 +622,7 @@ em {
   color: #a4a4a4;
   font-size: 12px;
   font-size: 1.2rem; }
-  @media only screen and (min-width: 670px) {
+  @media only screen and (min-width: 870px) {
     .footer {
       font-size: 1.6rem;
       margin-top: 6rem;
@@ -506,29 +644,47 @@ em {
 .align-right {
   text-align: right; }
 
-@media only screen and (min-width: 320px) {
-  .smt1 {
-    margin-top: 1rem !important; }
-  .smt2 {
-    margin-top: 2rem !important; }
-  .smt3 {
-    margin-top: 3rem !important; }
-  .smt4 {
-    margin-top: 4rem !important; }
-  .smt5 {
-    margin-top: 5rem !important; }
-  .smt6 {
-    margin-top: 6rem !important; }
-  .smt7 {
-    margin-top: 7rem !important; }
-  .smt8 {
-    margin-top: 8rem !important; }
-  .smt9 {
-    margin-top: 9rem !important; }
-  .smt10 {
-    margin-top: 10rem !important; } }
+.smt1 {
+  margin-top: 10px !important;
+  margin-top: 1rem !important; }
 
-@media only screen and (min-width: 670px) {
+.smt2 {
+  margin-top: 20px !important;
+  margin-top: 2rem !important; }
+
+.smt3 {
+  margin-top: 30px !important;
+  margin-top: 3rem !important; }
+
+.smt4 {
+  margin-top: 40px !important;
+  margin-top: 4rem !important; }
+
+.smt5 {
+  margin-top: 50px !important;
+  margin-top: 5rem !important; }
+
+.smt6 {
+  margin-top: 60px !important;
+  margin-top: 6rem !important; }
+
+.smt7 {
+  margin-top: 70px !important;
+  margin-top: 7rem !important; }
+
+.smt8 {
+  margin-top: 80px !important;
+  margin-top: 8rem !important; }
+
+.smt9 {
+  margin-top: 90px !important;
+  margin-top: 9rem !important; }
+
+.smt10 {
+  margin-top: 100px !important;
+  margin-top: 10rem !important; }
+
+@media only screen and (min-width: 600px) {
   .mmt1 {
     margin-top: 1rem !important; }
   .mmt2 {
@@ -550,7 +706,7 @@ em {
   .mmt10 {
     margin-top: 10rem !important; } }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 870px) {
   .lmt1 {
     margin-top: 1rem !important; }
   .lmt2 {

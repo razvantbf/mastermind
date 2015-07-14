@@ -39,6 +39,11 @@ mastermind.timeline = function() {
 // }}}
 // ON LOAD {{{
 $(document).ready(function() {
-    mastermind.timeline();
+    $('.cta').on('click', function() {
+        location.href = $('.cta').attr('data-href');
+    })
+    if ($('html').hasClass('no-touch')) {
+        mastermind.timeline();
+    }
 });
 // }}}

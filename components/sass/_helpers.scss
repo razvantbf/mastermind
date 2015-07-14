@@ -4,7 +4,6 @@
 .align-left { text-align: left; }
 .align-right { text-align: right; }
 
-@include bp-small {
     .smt1 { margin-top: 1rem !important; }
     .smt2 { margin-top: 2rem !important; }
     .smt3 { margin-top: 3rem !important; }
@@ -15,7 +14,6 @@
     .smt8 { margin-top: 8rem !important; }
     .smt9 { margin-top: 9rem !important; }
     .smt10 { margin-top: 10rem !important; }
-}
 
 @include bp-medium {
     .mmt1 { margin-top: 1rem !important; }
